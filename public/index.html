@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body class="font-poppins text-primary">
+    <main class="w-full min-h-screen bg-secondary-200 grid items-center px-5">
+      <article
+        class="bg-secondary-100 flex flex-col px-5 py-10 md:px-10 rounded-3xl"
+      >
+        <div
+          id="inputFields"
+          class="flex items-center justify-between md:justify-start md:gap-5"
+        >
+          <div id="dayHolder" data-error="Must be a valid day">
+            <span>day</span>
+            <input type="number" name="day" id="day" placeholder="DD" />
+          </div>
+          <div id="monthHolder" data-error="Must be a valid month">
+            <span>month</span>
+            <input type="number" name="month" id="month" placeholder="MM" />
+          </div>
+          <div id="yearHolder" data-error="Must be in the past">
+            <span>year</span>
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+          </div>
+        </div>
+        <div
+          id="buttonHolder"
+          class="md:justify-end relative w-full flex justify-center items-center"
+        >
+          <button
+            class="bg-primary-100 my-10 md:my-5 w-fit p-4 rounded-full z-20"
+            id="mainButton"
+          >
+            <img
+              src="../assets/images/icon-arrow.svg"
+              alt="start button"
+              class="w-6 md:w-10"
+            />
+          </button>
+        </div>
+        <div id="ageView" class="flex flex-col">
+          <p><span id="yearView">- -</span>Years</p>
+          <p><span id="monthsView">- -</span>Months</p>
+          <p><span id="daysView">- -</span>Days</p>
+        </div>
+      </article>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded with ☕ by <a href="#" target="_blank">Amr</a>.
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
